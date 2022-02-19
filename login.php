@@ -1,5 +1,5 @@
 
-<?php include("./head_front-end.php"); ?>
+<?php include("./head.php"); ?>
     
 <main class="form-signin">
   <form>
@@ -25,4 +25,4 @@
   </form>
 </main>
 
-<?php include("./footer_front-end.php"); ?>
+<?php include("./footer.php"); ?>
