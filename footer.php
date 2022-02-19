@@ -1,4 +1,7 @@
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-23cb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">316/1  ซอยวงศ์สว่าง 11 ถนนวงศ์สว่าง&nbsp;แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพ 10800&nbsp;Tel : 02 913 1399 , 02 585 9105 Email : nagano-1@hotmail.com</p>
+      </div>
+    </footer>
+  </body>
 </html>
