@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
 <?php include("./head_front-end.php"); ?>
-=======
-<?php include("./head.php"); ?>
->>>>>>> 0a4e6491eb2123df9803bf18acee8a1b7048e723
     
 <main class="form-signin">
   <form>
@@ -29,8 +25,4 @@
   </form>
 </main>
 
-<<<<<<< HEAD
 <?php include("./footer_front-end.php"); ?>
-=======
-<?php include("./footer.php"); ?>
->>>>>>> 0a4e6491eb2123df9803bf18acee8a1b7048e723
