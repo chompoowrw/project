@@ -315,3 +315,88 @@
   font-weight: 400;
   src: url(../../assets/fonts/Circular.ttf);
 }
+
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1081px;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 771px;
+  height: 108px;
+  margin: 67px 152px 0 auto;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: Circular;
+  background-image: none;
+  font-size: 2.25rem;
+  margin: -83px 289px 0 auto;
+}
+
+.u-section-1 .u-shape-2 {
+  width: 771px;
+  height: 108px;
+  margin: 51px 152px 0 auto;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: Circular;
+  font-size: 1.875rem;
+  margin: -78px 234px 0 auto;
+}
+
+.u-section-1 .u-shape-3 {
+  width: 250px;
+  height: 250px;
+  margin: 56px auto 0 298px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 79px;
+  height: 79px;
+  margin: -204px auto 0 384px;
+}
+
+.u-section-1 .u-text-3 {
+  font-family: Circular;
+  font-size: 1.875rem;
+  margin: 26px auto 0 380px;
+}
+
+.u-section-1 .u-shape-4 {
+  width: 250px;
+  height: 250px;
+  margin: -200px 234px 0 auto;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 79px;
+  height: 79px;
+  margin: -204px 317px 0 auto;
+}
+
+.u-section-1 .u-text-4 {
+  font-family: Circular;
+  font-size: 1.875rem;
+  margin: 26px 317px 0 751px;
+}
+
+.u-section-1 .u-shape-5 {
+  width: 771px;
+  height: 228px;
+  background-image: none;
+  margin: 78px 152px 0 auto;
+}
+
+.u-section-1 .u-icon-3 {
+  width: 79px;
+  height: 79px;
+  margin: -200px 499px 0 auto;
+}
+
+.u-section-1 .u-text-5 {
+  font-family: Circular;
+  font-size: 1.875rem;
+  margin: 27px 431px 60px 498px;
+}
