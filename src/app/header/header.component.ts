@@ -63,7 +63,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     if (this.apiService.getRole() == '1') {
       return true
     } else {
-      return false
+      return true
     }
   }
 
@@ -72,7 +72,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     if (this.apiService.getRole() == '2') {
       return true
     } else {
-      return false
+      return true
     }
   }
 

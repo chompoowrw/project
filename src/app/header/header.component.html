@@ -25,18 +25,18 @@
       <ul class="u-custom-font u-nav u-unstyled u-nav-1">
         <li class="u-nav-item">
           <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2"
-            routerLink="/login" style="padding: 10px 8px" *ngIf="(isLogin() && isAdmin() && isUser())">เข้าสู่ระบบ</a>
+            routerLink="/login" style="padding: 10px 8px" *ngIf="(isLogout() && isAdmin() && isUser())">เข้าสู่ระบบ</a>
         </li>
         <li class="u-nav-item">
           <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2"
-            routerLink="/register" style="padding: 10px 6px 10px 8px" *ngIf="(isLogin() && isAdmin() && isUser())">สมัครสมาชิก</a>
+            routerLink="/register" style="padding: 10px 6px 10px 8px" *ngIf="(isLogout() && isAdmin() && isUser())">สมัครสมาชิก</a>
         </li>
         <li class="u-nav-item">
           <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2"
             routerLink="/register" style="padding: 10px 6px 10px 8px" *ngFor="let u of user">{{u.user_name}}</a>
         </li>
         <li class="u-nav-item">
-          <button (click)="logout()" *ngIf="(isLogout() && isAdmin() && isUser())" class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" style="padding: 10px 6px 10px 8px">ออกจากระบบ</button>
+          <button (click)="logout()" *ngIf="(isLogin() && isAdmin() && isUser())" class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" style="padding: 10px 6px 10px 8px">ออกจากระบบ</button>
         </li>
       </ul>
     </div>
