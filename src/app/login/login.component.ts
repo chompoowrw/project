@@ -11,28 +11,29 @@ import { Subscription } from 'rxjs';
 })
 export class LoginComponent implements OnInit, OnDestroy {
   loginForm = this.fb.group({
-    username: ['',[Validators.required]],
-    password: ['',[Validators.minLength(8), Validators.required]]
+    username: ['', [Validators.required]],
+    password: ['', [Validators.minLength(8), Validators.required]]
   });
   sublogin: Subscription | undefined;
   isLogin: boolean = false;
   profile: any;
 
   constructor(private fb: FormBuilder, private apiService: ApiService,
-              private router: Router) { }
+    private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  login(): void{
-    //console.log(this.loginForm.value);
+  login(): void {
+    console.log(this.loginForm.value);
     this.sublogin = this.apiService.login(this.loginForm.value).subscribe(
       (token) => {
         alert(token.message);
-        if(token.data){
-          // localStorage.setItem('data',JSON.stringify(token.data));
+        if (token.data) {
+          localStorage.setItem('data',JSON.stringify(token.data));
           // localStorage.setItem('role_id',(token.role_id));
-          localStorage.setItem('data', (token.data));
+          localStorage.setItem('token', (token.token));
+          // localStorage.setItem('data', (token.data));
           localStorage.setItem('role_id', (token.role_id));
           this.isLogin = true;
           //this.profile = token.data;
@@ -51,7 +52,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.isLogin = false;
     this.loginForm.reset();
     this.router.navigate(['/']);
-   }
+  }
+
   ngOnDestroy(): void {
     this.sublogin?.unsubscribe();
   }
