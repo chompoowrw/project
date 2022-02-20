@@ -67,4 +67,5 @@ export class ApiService {
     localStorage.clear();
     //localStorage.removeItem('data');
   }
+
 }
