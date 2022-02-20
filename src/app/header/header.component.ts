@@ -94,7 +94,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   //ออกจากระบบ
   logout() {
-    this.apiService.deleteToken();
+    this.apiService.logout();
     this.router.navigate(['/login']);
   }
 }
