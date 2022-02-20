@@ -77,10 +77,10 @@
     <p class="u-custom-font u-text u-text-default u-text-1">
       ข่าวประชาสัมพันธ์
     </p>
-    <div class="col-lg-4">
+    <div *ngFor="let art of articles" class="col-sm-12">
       <!-- <img *ngIf="isShow" [src]='imgLoad' [width]="imgWidth" /> -->
-      <hr *ngIf="!isShow">
-      <div *ngFor="let art of articles" class="card" a>
+      <br *ngIf="!isShow">
+      <div class="card" a>
         <img *ngIf="art.urlToImage" onError="this.src='./assets/images/catalog-default-img.png'" class="card-img-top"
           [src]="art.urlToImage" width="530" alt="Card image cap">
         <div class="card-body">
@@ -103,7 +103,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <br>
