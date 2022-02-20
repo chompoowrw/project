@@ -25,11 +25,14 @@
       <ul class="u-custom-font u-nav u-unstyled u-nav-1">
         <li class="u-nav-item">
           <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2"
-            routerLink="/login" style="padding: 10px 8px">เข้าสู่ระบบ</a>
+            routerLink="/login" style="padding: 10px 8px" *ngIf="(isLogout() && isAdmin())">เข้าสู่ระบบ</a>
         </li>
         <li class="u-nav-item">
           <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2"
-            routerLink="/register" style="padding: 10px 6px 10px 8px">สมัครสมาชิก</a>
+            routerLink="/register" style="padding: 10px 6px 10px 8px" *ngIf="(isLogout() && isAdmin())">สมัครสมาชิก</a>
+        </li>
+        <li class="u-nav-item">
+          <button (click)="logout()" *ngIf="(isLogin() && isAdmin() && isUser())" class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" style="padding: 10px 6px 10px 8px">ออกจากระบบ</button>
         </li>
       </ul>
     </div>
@@ -39,10 +42,13 @@
           <div class="u-menu-close"></div>
           <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
             <li class="u-nav-item">
-              <a class="u-button-style u-nav-link" href="/login" style="padding: 10px 20px">เข้าสู่ระบบ</a>
+              <a class="u-button-style u-nav-link" href="/login" *ngIf="(isLogout() && isAdmin())" style="padding: 10px 20px">เข้าสู่ระบบ</a>
             </li>
             <li class="u-nav-item">
-              <a class="u-button-style u-nav-link" href="/register" style="padding: 10px 20px">สมัครสมาชิก</a>
+              <a class="u-button-style u-nav-link" href="/register" *ngIf="(isLogout() && isAdmin())" style="padding: 10px 20px">สมัครสมาชิก</a>
+            </li>
+            <li class="u-nav-item">
+              <button (click)="logout()" *ngIf="(isLogin() && isAdmin() && isUser())" class="u-button-style u-nav-link" style="padding: 10px 20px">ออกจากระบบ</button>
             </li>
           </ul>
         </div>

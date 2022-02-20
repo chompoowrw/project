@@ -30,10 +30,13 @@ export class LoginComponent implements OnInit, OnDestroy {
       (token) => {
         alert(token.message);
         if(token.data){
-          localStorage.setItem('data',JSON.stringify(token.data));
+          // localStorage.setItem('data',JSON.stringify(token.data));
+          // localStorage.setItem('role_id',(token.role_id));
+          localStorage.setItem('data', (token.data));
+          localStorage.setItem('role_id', (token.role_id));
           this.isLogin = true;
-          this.profile = token.data;
-          this.profile.image = '../../assets/images/user.jpg';
+          //this.profile = token.data;
+          //this.profile.image = '../../assets/images/user.jpg';
           this.router.navigate(['/']);
         }
       },
