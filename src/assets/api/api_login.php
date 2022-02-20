@@ -1,7 +1,7 @@
 <?php
-	header('Access-Control-Allow-Origin: *');
-	header('Access-Control-Allow-Method: POST');
-	header('Access-Control-Allow-Headers: Content-Type');
+	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE");
+	header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 
 	include("db_connect.php");
 
@@ -27,6 +27,8 @@
 			$output['status'] = "success";
 			$output['message'] = "Welcome ".$row['user_name'];
 			$output['data'] = $row;
+			$output['token'] = $row['user_id'];
+			$output['role_id'] = $row['role_id'];
 		}
 		else{
 			$output['message'] = "Invalid email or password";
