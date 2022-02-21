@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { AdtobePipe } from './shared/adtobe.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImageComponent } from './image/image.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ImageComponent } from './image/image.component';
     LoginComponent,
     RegisterComponent,
     AdtobePipe,
-    ImageComponent
+    ImageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
