@@ -26,23 +26,23 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     // //เรียก function getUser เมื่อ App เริ่มทำงาน
-    // this.getUser();
-    // this.headerService.getUser().subscribe(
-    //   (users) => {
-    //     //นำข้อมูลที่ได้เก็บไว้ที่ตัวแปร getCountUser
-    //     this.user = users;
-    //   }
-    // );
+    this.getUser();
+    this.headerService.getUser().subscribe(
+      (users) => {
+        //นำข้อมูลที่ได้เก็บไว้ที่ตัวแปร getCountUser
+        this.user = users;
+      }
+    );
   }
 
   //รับข้อมูลจำนวนผู้ใช้ทั้งหมด
-  // getUser(): void{
-  //   this.sub = this.headerService.getUser().subscribe(
-  //     (users) => {
-  //       console.log(users);
-  //     }
-  //   );
-  // }
+  getUser(): void{
+    this.sub = this.headerService.getUser().subscribe(
+      (users) => {
+        console.log(users);
+      }
+    );
+  }
 
   //จะถูกเรียก component จะถูกทำลายใช้สำหรับการ unsubscribe พวก observable และ event ต่างๆ ที่ subscribed ไว้เพื่อไม่ให้เกิดปัญหา memory leak
   ngOnDestroy(): void{
@@ -95,6 +95,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   //ออกจากระบบ
   logout() {
     this.apiService.logout();
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
 }
