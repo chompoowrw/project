@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     this.registerService.register(formValue).subscribe(
       (feedback) => {
         alert(feedback.message);
-        this.router.navigate(['/']);
+        this.router.navigate(['/login']);
       }
     );
   }
