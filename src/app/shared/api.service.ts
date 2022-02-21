@@ -30,21 +30,23 @@ export class ApiService {
   }
 
   //token
-  setToken(data: string, role_id: string) {
+  setToken(token: string, data: string, role_id: string) {
     // localStorage.setItem('token', JSON.stringify(token));
     // localStorage.setItem('userlevel_id', JSON.stringify(Userlevel_ID));
+    localStorage.setItem('token', token);
     localStorage.setItem('data', data);
     localStorage.setItem('role_id', role_id);
   }
 
   //รับค่า token
   getToken() {
-    return localStorage.getItem('data');
+    return localStorage.getItem('token');
     // return JSON.parse(localStorage.getItem('data') || '{}');
   }
 
   //ลบค่า token
   deleteToken() {
+    localStorage.removeItem('token');
     localStorage.removeItem('data');
     localStorage.removeItem('role_id');
   }

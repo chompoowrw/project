@@ -3,44 +3,56 @@
 <section class="u-clearfix u-white u-section-1" id="sec-959e">
   <div class="u-clearfix u-sheet u-sheet-1">
     <div class="u-form u-form-1">
-      <form action="#" method="POST" class="u-clearfix u-form-spacing-25 u-form-vertical u-inner-form" source="custom"
-        name="form" style="padding: 30px">
+      <form #regisForm="ngForm" class="u-clearfix u-form-spacing-25 u-form-vertical u-inner-form" source="custom"
+        name="form" style="padding: 30px" novalidate>
         <div class="u-form-group u-form-name">
-          <label for="name-8b87" class="u-custom-font u-label u-label-1">ชื่อผู้ใช้</label>
-          <input type="text" id="name-8b87" name="user"
+          <label for="username" class="u-custom-font u-label u-label-1">ชื่อผู้ใช้</label>
+          <input required #username="ngModel"
+          [ngClass]="{ 'is-invalid': username.invalid && (username.touched || username.dirty) }"
+          ngModel name="username" id="username" type="text"
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-1"
             required="" />
         </div>
         <div class="u-form-group">
-          <label for="email-8b87" class="u-custom-font u-label u-label-2">รหัสผ่าน</label>
-          <input type="text" id="email-8b87" name="password"
+          <label for="password" class="u-custom-font u-label u-label-2">รหัสผ่าน</label>
+          <input required #password="ngModel"
+          [ngClass]="{ 'is-invalid': password.invalid && (password.dirty || password.touched) }"
+          minlength="5"
+          ngModel name="password" id="password" type="password"
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-2"
             required="required" />
         </div>
         <div class="u-form-group u-form-group-3">
-          <label for="text-d717" class="u-custom-font u-label u-label-3">ชื่อ-นามสกุล</label>
-          <input type="text" placeholder="" id="text-d717" name="name"
+          <label for="fullname" class="u-custom-font u-label u-label-3">ชื่อ-นามสกุล</label>
+          <input required #fullname="ngModel"
+          [ngClass]="{ 'is-invalid': fullname.invalid && (fullname.touched || fullname.dirty) }"
+          ngModel name="fullname" id="fullname" type="text" placeholder=""
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3" />
         </div>
         <div class="u-form-group u-form-phone u-form-group-4">
-          <label for="text-5a68" class="u-custom-font u-label u-label-4">เบอร์โทร</label>
-          <input type="tel" placeholder="" id="text-5a68" name="tell"
+          <label for="phone" class="u-custom-font u-label u-label-4">เบอร์โทร</label>
+          <input required #phone="ngModel"
+          [ngClass]="{ 'is-invalid': phone.invalid && (phone.touched || phone.dirty) }"
+          ngModel name="phone" id="phone" type="text" placeholder=""
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-4" />
         </div>
         <div class="u-form-email u-form-group u-form-group-5">
-          <label for="text-e886" class="u-custom-font u-label u-label-5">อีเมล</label>
-          <input type="email" placeholder="" id="text-e886" name="email"
+          <label for="email" class="u-custom-font u-label u-label-5">อีเมล</label>
+          <input required #email="ngModel"
+          [ngClass]="{ 'is-invalid': email.invalid && (email.touched || email.dirty) }"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          ngModel name="email" id="email" type="email" placeholder=""
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-5" />
         </div>
         <div class="u-form-group u-form-group-6">
-          <label for="text-dd10" class="u-custom-font u-label u-label-6">ไอดีไลน์</label>
-          <input type="text" placeholder="" id="text-dd10" name="line"
+          <label for="lineid" class="u-custom-font u-label u-label-6">ไอดีไลน์</label>
+          <input required #lineid="ngModel"
+          [ngClass]="{ 'is-invalid': lineid.invalid && (lineid.touched || lineid.dirty) }"
+          ngModel name="lineid" id="lineid" type="text" placeholder=""
             class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6" />
         </div>
         <div class="u-align-right u-form-group u-form-submit">
-          <a href="#"
-            class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ยืนยันข้อมูล<br />
-          </a>
+          <button [disabled]="regisForm.invalid" (click)="register(regisForm.value)" type="submit" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ยืนยันข้อมูล</button><br />
           <input type="submit" value="submit" class="u-form-control-hidden" />
         </div>
         <div class="u-form-send-message u-form-send-success">

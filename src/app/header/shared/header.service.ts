@@ -15,10 +15,10 @@ export class HeaderService {
     return localStorage.getItem('token');
   }
 
-  // getUser(): Observable<User[]>{
-  //   const apiHeader = { 'Authorization': this.getToken() };
-  //   return this.http.get<User[]>(environment.baseUrl + '/api_show_user.php', { headers: apiHeader });
-  // }
+  getUser(): Observable<User[]>{
+    const apiHeader = { 'Authorization': 'Bearer ' + this.getToken() };
+    return this.http.get<User[]>(environment.baseUrl + '/api_show_user.php', { headers: apiHeader });
+  }
 
   // getUsers(): Observable<User[]>{
   //   const apiHeader = {'Content-Type': 'application/json'};
