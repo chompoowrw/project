@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   //ใน constructor กำหนดให้ headerService กับ apiService เป็นตัวแปรแบบ private และ เรียกใช้งาน HeaderService กับ ApiService
   constructor(private apiService: ApiService, private headerService: HeaderService, private router: Router) {
-
+    this.apiService.isLoggedIn();
   }
 
   ngOnInit(): void {

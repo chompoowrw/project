@@ -1,13 +1,24 @@
 import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { catchError, retry } from 'rxjs/operators';
+import { Injectable, Output, EventEmitter } from '@angular/core';
+import { catchError, retry, map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
+export interface Users {
+  User_ID: number;
+  User_Name: string;
+  Email: string;
+  Password: string;
+  Userlevel_ID: string;
+}
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+
+  redirectUrl: string | undefined;
+
+  @Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
 
   constructor(private http: HttpClient) { }
 
@@ -28,6 +39,24 @@ export class ApiService {
     return throwError(error);
 
   }
+
+  userlogin(loginForm: any): Observable<any> {
+    const loginHeader = { 'Content-Type': 'application/json' };
+    const body = {
+      'email': loginForm.email,
+      'password': loginForm.password
+    };
+    return this.http.post<any>(environment.baseUrl + '/api_login_2.php', body, { headers: loginHeader }).pipe(
+      map(
+        (Users) => {
+          this.setToken(Users[0].User_ID, Users[0].data, Users[0].role_id);
+          this.getLoggedInName.emit(true);
+          return Users;
+        }
+      )
+    );
+  }
+
 
   //token
   setToken(token: string, data: string, role_id: string) {
