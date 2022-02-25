@@ -161,7 +161,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       } else {
       ?>
       <h2 class="u-custom-font u-text u-text-default u-text-1">สอบถามข้อมูลเพิ่มเติม</h2>
-      <a href="./login.php" data-page-id="1136523399" class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
+      <a href="./answer.php" data-page-id="1136523399" class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
       <?php
       }
       ?>

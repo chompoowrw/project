@@ -96,8 +96,25 @@
                                               } ?>" href="./index.php" style="padding: 10px 32px;">home</a>
         </li>
         <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "news.php") ? "active" : ""; ?>" href="./news.php" style="padding: 10px 32px;">ข่าวประชาสัมพันธ์</a>
+        </li>
+        <li class="u-nav-item">
           <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
         </li>
+        <?php
+        if (!isset($_SESSION['user_username'])) {
+        } 
+        else {
+        ?>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "reservation.php") ? "active" : ""; ?>" href="./reservation.php" style="padding: 10px 32px;">การจอง</a>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
+        </li>
+        <?php
+        }
+        ?>
         <li class="u-nav-item">
           <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
         </li>
@@ -115,14 +132,33 @@
                                                 echo "active";
                                               } else {
                                                 echo "";
-                                              } ?>"><a class="u-button-style u-nav-link" href="./index.php" style="padding: 10px 32px;">หน้าแรก</a>
+                                              } ?>">
+              <a class="u-button-style u-nav-link" href="./index.php" style="padding: 10px 32px;">หน้าแรก</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "news.php") ? "active" : ""; ?>" href="./news.php" style="padding: 10px 32px;">ข่าวประชาสัมพันธ์</a>
             </li>
             <li class="u-nav-item">
               <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
+            <!-- <?php
+            if (!isset($_SESSION['user_username'])) {
+            } else {
+            ?>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "news.php") ? "active" : ""; ?>" href="./news.php" style="padding: 10px 32px;">ข่าวประชาสัมพันธ์</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "contact.php") ? "active" : ""; ?>" href="./contact.php" style="padding: 10px 32px;">ติดต่อเรา</a>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
+            </li>
+            <?php
+            }
+            ?> -->
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "contact.php") ? "active" : ""; ?>" href="./contact.php" style="padding: 10px 32px;">ติดต่อเรา</a>
             </li>
           </ul>
         </div>
