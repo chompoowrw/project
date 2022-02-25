@@ -1,3 +1,20 @@
+<?php
+session_start();
+date_default_timezone_set("Asia/Bangkok");
+include('./connect.php');
+
+$strKeyword = null;
+
+if (isset($_POST["txtSearch"])) {
+  $strKeyword = $_POST["txtSearch"];
+}
+
+if (isset($_SESSION["user_username"])) {
+  if ($_SESSION["role_id"] == "1") {
+    header("location: ./home.php");
+  }
+}
+?>
 <!DOCTYPE html>
 <html style="font-size: 16px;">
 <head>
@@ -6,10 +23,12 @@
   <meta name="keywords" content="สอบถามข้อมูลเพิ่มเติม">
   <meta name="description" content="">
   <meta name="page_type" content="np-template-header-footer-from-plugin">
-  <title>หน้าแรก</title>
+  <title>บริษัท นากาโน คอนสตรั๊คชั่น แอนด์ อินทีเรีย จำกัด</title>
   <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen">
   <script class="u-script" type="text/javascript" src="./assets/js/jquery.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="./assets/js/nicepage.js" defer=""></script>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
   <meta property="og:image"
     content="https://www.thaicontractor.com/tag/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87/images/a9b604b59095b061c297794db78fe1bdddadd1ee26757cf6b7dd9f4d507555ad19539f730b7a933c813343e4c55b236f697a2f5f8976a34cc2601d_1280.jpg">

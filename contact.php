@@ -1,4 +1,4 @@
-<?php include("./head.php"); ?>
+<?php include("./head_front-end.php"); ?>
 <link rel="stylesheet" href="./assets/css/contact.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
@@ -43,4 +43,4 @@
     </div>
   </section>
 
-  <?php include("./footer.php"); ?>
+  <?php include("./footer_front-end.php"); ?>

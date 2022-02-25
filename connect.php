@@ -3,7 +3,7 @@
   $servername = "localhost";
   $username = "root";
   $password = "";
-  $dbname = "dbproject";
+  $dbname = "ngproject";
 	
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);

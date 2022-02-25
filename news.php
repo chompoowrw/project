@@ -1,4 +1,4 @@
-<?php include("./head.php"); ?>
+<?php include("./head_front-end.php"); ?>
 <link rel="stylesheet" href="./assets/css/index.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
@@ -220,4 +220,4 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     </div>
   </section>
 
-  <?php include("./footer.php"); ?>
+  <?php include("./footer_front-end.php"); ?>

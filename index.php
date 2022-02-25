@@ -1,4 +1,4 @@
-<?php include("./head.php"); ?>
+<?php include("./head_front-end.php"); ?>
 <link rel="stylesheet" href="./assets/css/index.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
@@ -152,9 +152,20 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
   </section>
   <section class="u-align-center u-clearfix u-white u-section-4" id="sec-d609">
     <div class="u-align-center u-clearfix u-sheet u-sheet-1">
+      <?php
+      if (!isset($_SESSION['user_username'])) {
+      ?>
       <h2 class="u-custom-font u-text u-text-default u-text-1">สอบถามข้อมูลเพิ่มเติม</h2>
-      <a href="เข้าสู่ระบบ.html" data-page-id="1136523399" class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
+      <a href="./login.php" data-page-id="1136523399" class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
+      <?php
+      } else {
+      ?>
+      <h2 class="u-custom-font u-text u-text-default u-text-1">สอบถามข้อมูลเพิ่มเติม</h2>
+      <a href="./login.php" data-page-id="1136523399" class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
+      <?php
+      }
+      ?>
     </div>
   </section>
 
-  <?php include("./footer.php"); ?>
+  <?php include("./footer_front-end.php"); ?>

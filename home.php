@@ -1,5 +1,5 @@
 
-<?php include("./head.php"); ?>
+<?php include("./head_front-end.php"); ?>
 <?php include("./header.php"); ?>
 
 <section class="u-carousel u-carousel-left u-slide u-block-0022-1" id="carousel_40a9" data-interval="2000"
@@ -231,4 +231,4 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     </div>
   </section>
 
-<?php include("./footer.php"); ?>
+<?php include("./footer_front-end.php"); ?>

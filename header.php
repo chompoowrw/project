@@ -16,10 +16,27 @@
     </div>
     <div class="u-custom-menu u-nav-container">
       <ul class="u-custom-font u-nav u-unstyled u-nav-1">
-        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="เข้าสู่ระบบ.html" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
+        <?php
+        if (!isset($_SESSION['user_username'])) {
+        ?>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="./login.php" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
         </li>
-        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="สมัครสมาชิก.html" style="padding: 10px 8px;">สมัครสมาชิก</a>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="./register.php" style="padding: 10px 8px;">สมัครสมาชิก</a>
         </li>
+        <?php
+        } else {
+        ?>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="#" style="padding: 10px 8px;"><?php echo $_SESSION["user_name"]; ?></a>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="./logout.php" style="padding: 10px 8px;">ออกจากระบบ</a>
+        </li>
+        <?php
+        }
+        ?>
       </ul>
     </div>
     <div class="u-custom-menu u-nav-container-collapse">
@@ -27,10 +44,27 @@
         <div class="u-inner-container-layout u-sidenav-overflow">
           <div class="u-menu-close"></div>
           <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="เข้าสู่ระบบ.html" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
+            <?php
+            if (!isset($_SESSION['user_username'])) {
+            ?>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="./login.php" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="สมัครสมาชิก.html" style="padding: 10px 8px;">สมัครสมาชิก</a>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="./register.php" style="padding: 10px 8px;">สมัครสมาชิก</a>
             </li>
+            <?php
+            } else {
+            ?>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="#" style="padding: 10px 8px;"><?php echo $_SESSION["user_name"]; ?></a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="./logout.php" style="padding: 10px 8px;">ออกจากระบบ</a>
+            </li>
+            <?php
+            }
+            ?>
           </ul>
         </div>
       </div>
