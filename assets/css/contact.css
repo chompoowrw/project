@@ -35,7 +35,9 @@
   .u-section-1 .u-map-1 {
     width: 340px;
   }
-} .u-section-2 {
+} 
+
+.u-section-2 {
   background-image: none;
 }
 
@@ -201,5 +203,5 @@
   font-family: 'Circular';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/Circular.ttf);
+  src: url(./../fonts/Circular.ttf);
 }

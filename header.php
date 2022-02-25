@@ -18,7 +18,7 @@
       <ul class="u-custom-font u-nav u-unstyled u-nav-1">
         <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="เข้าสู่ระบบ.html" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
         </li>
-        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="สมัครสมาชิก.html" style="padding: 10px 6px 10px 8px;">สมัครสมาชิก</a>
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-4-light-2" href="สมัครสมาชิก.html" style="padding: 10px 8px;">สมัครสมาชิก</a>
         </li>
       </ul>
     </div>
@@ -27,9 +27,9 @@
         <div class="u-inner-container-layout u-sidenav-overflow">
           <div class="u-menu-close"></div>
           <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="เข้าสู่ระบบ.html" style="padding: 10px 20px;">เข้าสู่ระบบ</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="เข้าสู่ระบบ.html" style="padding: 10px 8px;">เข้าสู่ระบบ</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="สมัครสมาชิก.html" style="padding: 10px 20px;">สมัครสมาชิก</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="สมัครสมาชิก.html" style="padding: 10px 8px;">สมัครสมาชิก</a>
             </li>
           </ul>
         </div>
@@ -54,13 +54,21 @@
     </div>
     <div class="u-custom-menu u-nav-container">
       <ul class="u-custom-font u-nav u-spacing-2 u-unstyled u-nav-3">
-        <li class="u-nav-item"><a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90" href="หน้าแรก.html" style="padding: 10px 32px;">หน้าแรก</a>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?php if (basename($_SERVER['PHP_SELF']) == "index.php") {
+                                                echo "active";
+                                              } else {
+                                                echo "";
+                                              } ?>" href="./index.php" style="padding: 10px 32px;">home</a>
         </li>
-        <li class="u-nav-item"><a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90" href="รู้จักบริษัท.html" style="padding: 10px 32px;">รู้จักบริษัท</a>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
         </li>
-        <li class="u-nav-item"><a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90" href="ศักยภาพ.html" style="padding: 10px 32px;">ศักยภาพ</a>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
         </li>
-        <li class="u-nav-item"><a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90" href="ติดต่อเรา.html" style="padding: 10px 26px 10px 32px;">ติดต่อเรา</a>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "contact.php") ? "active" : ""; ?>" href="./contact.php" style="padding: 10px 32px;">ติดต่อเรา</a>
         </li>
       </ul>
     </div>
@@ -69,13 +77,18 @@
         <div class="u-inner-container-layout u-sidenav-overflow">
           <div class="u-menu-close"></div>
           <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4">
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="หน้าแรก.html" style="padding: 10px 68px;">หน้าแรก</a>
+            <li class="u-nav-item <?php if (basename($_SERVER['PHP_SELF']) == "index.php") {
+                                                echo "active";
+                                              } else {
+                                                echo "";
+                                              } ?>"><a class="u-button-style u-nav-link" href="./index.php" style="padding: 10px 32px;">หน้าแรก</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="รู้จักบริษัท.html" style="padding: 10px 68px;">รู้จักบริษัท</a>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "company.php") ? "active" : ""; ?>" href="./company.php" style="padding: 10px 32px;">รู้จักบริษัท</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="ศักยภาพ.html" style="padding: 10px 68px;">ศักยภาพ</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
             </li>
-            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="ติดต่อเรา.html" style="padding: 10px 68px;">ติดต่อเรา</a>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "contact.php") ? "active" : ""; ?>" href="./contact.php" style="padding: 10px 32px;">ติดต่อเรา</a>
             </li>
           </ul>
         </div>
