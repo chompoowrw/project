@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./assets/css/index.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
-  <?php include("./header.php"); ?>
+  <?php include("./header_front-end.php"); ?>
 
   <?php include("./image.php"); ?>
   <section class="u-clearfix u-section-2" id="sec-8eba">

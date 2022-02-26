@@ -1,6 +1,6 @@
 
 <?php include("./head_front-end.php"); ?>
-<?php include("./header.php"); ?>
+<?php include("./header_front-end.php"); ?>
 
 <section class="u-carousel u-carousel-left u-slide u-block-0022-1" id="carousel_40a9" data-interval="2000"
     data-u-ride="carousel" data-pause="false">

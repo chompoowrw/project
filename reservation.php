@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./assets/css/register.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
-  <?php include("./header.php"); ?>
+  <?php include("./header_front-end.php"); ?>
 
   <section class="u-clearfix u-white u-section-1" id="sec-959e">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -21,7 +21,7 @@
           </div>
           <div class="u-form-group u-form-group-6">
             <label for="deposit_reservation" class="u-custom-font u-label u-label-6">ค่ามัดจำ</label>
-            <input type="text" placeholder="" id="line_id_reservation" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
+            <input type="text" placeholder="" id="deposit_reservation" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
           </div>
           <div class="u-align-right u-form-group u-form-submit">
             <button type="button" id="btn_reservation" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ยืนยันข้อมูล<br>

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./assets/css/register.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
-  <?php include("./header.php"); ?>
+  <?php include("./header_front-end.php"); ?>
 
   <section class="u-clearfix u-white u-section-1" id="sec-959e">
     <div class="u-clearfix u-sheet u-sheet-1">

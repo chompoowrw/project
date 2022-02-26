@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./assets/css/register.css" media="screen">
 </head>
 <body class="u-body u-xl-mode">
-  <?php include("./header.php"); ?>
+  <?php include("./header_front-end.php"); ?>
 
   <section class="u-clearfix u-white u-section-1" id="sec-959e">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -16,11 +16,11 @@
             <input type="text" placeholder="" id="name_answer" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3" value="<?php echo $_SESSION['user_name']; ?>">
           </div>
           <div class="u-form-group u-form-group-6">
-            <label for="line_id_regis" class="u-custom-font u-label u-label-6">สอบถาม</label>
-            <input type="text" placeholder="" id="line_id_regis" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
+            <label for="answer_answer" class="u-custom-font u-label u-label-6">สอบถาม</label>
+            <input type="text" placeholder="" id="answer_answer" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
           </div>
           <div class="u-align-right u-form-group u-form-submit">
-            <button type="button" id="btn_regis" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ยืนยันข้อมูล<br>
+            <button type="button" id="btn_answer" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ส่งสอบถาม<br>
             </button>
             <input type="submit" value="submit" class="u-form-control-hidden">
           </div>

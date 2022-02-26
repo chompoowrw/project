@@ -90,6 +90,78 @@
           }
         });
 
+        $("#btn_answer").click(function() {
+          var user_id_answer = $("#user_id_answer").val();
+          var answer_answer = $("#answer_answer").val();
+
+          // console.log(firstname_regis + lastname_regis + username_regis + pwd_regis + confirm_pwd + idcard_regis + tel_regis);
+
+          if (user_id_answer == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else if (answer_answer == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else {
+            $.post("query/answers.php", {
+              user_id_answer: user_id_answer,
+              answer_answer: answer_answer
+            }, function(datacallback) {
+              if (datacallback == "success") {
+                alert("ส่งสอบถามสำเร็จ");
+                $("#answer_answer").val("");
+                window.location.replace("index.php");
+              } else if (datacallback == "already") {
+                //alert("มีชื่อผู้ใช้นี้อยู่ในระบบแล้ว");
+                console.log(user_id_answer + answer_answer);
+                $("#answer_answer").val("");
+              } else {
+                alert("เกิดขึ้นผิดพลาด: " + datacallback);
+              }
+            });
+          }
+        });
+
+        $("#btn_reservation").click(function() {
+          var user_id_reservation = $("#user_id_reservation").val();
+          var name_reservation = $("#name_reservation").val();
+          var phone_reservation = $("#tel_reservation").val();
+          var deposit_reservation = $("#deposit_reservation").val();
+
+          // console.log(firstname_regis + lastname_regis + username_regis + pwd_regis + confirm_pwd + idcard_regis + tel_regis);
+
+          if (user_id_reservation == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else if (name_reservation == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else if (phone_reservation == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else if (deposit_reservation == "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+          } else {
+            $.post("query/reservations.php", {
+              user_id_reservation: user_id_reservation,
+              name_reservation: name_reservation, 
+              phone_reservation: phone_reservation,
+              deposit_reservation: deposit_reservation
+            }, function(datacallback) {
+              if (datacallback == "success") {
+                alert("จองสำเร็จ");
+                $("#name_reservation").val("");
+                $("#tel_reservation").val("");
+                $("#deposit_reservation").val("");
+                window.location.replace("index.php");
+              } else if (datacallback == "already") {
+                //alert("มีชื่อผู้ใช้นี้อยู่ในระบบแล้ว");
+                console.log(user_id_reservation + name_reservation + phone_reservation + deposit_reservation);
+                $("#name_reservation").val("");
+                $("#tel_reservation").val("");
+                $("#deposit_reservation").val("");
+              } else {
+                alert("เกิดขึ้นผิดพลาด: " + datacallback);
+              }
+            });
+          }
+        });
+
         $("#btn_profile").click(function() {
           var user_id_profile = $("#user_id_profile").val();
           var firstname_profile = $("#firstname_profile").val();
