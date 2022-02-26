@@ -24,7 +24,7 @@
             <input type="text" placeholder="" id="deposit_reservation" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
           </div>
           <div class="u-align-right u-form-group u-form-submit">
-            <button type="button" id="btn_reservation" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">ยืนยันข้อมูล<br>
+            <button type="button" id="btn_reservation" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-hover-palette-2-light-2 u-radius-12 u-text-hover-white u-btn-1">จองคิว<br>
             </button>
             <input type="submit" value="submit" class="u-form-control-hidden">
           </div>
