@@ -15,7 +15,7 @@ include('./header_back-end.php');
 <div class="page-content">
   <section class="row">
     <div class="col-12 col-lg-9">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-6 col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body px-3 py-4-5">
@@ -124,7 +124,7 @@ include('./header_back-end.php');
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="row">
         <div class="col-12">
           <div class="card">
@@ -276,7 +276,12 @@ include('./header_back-end.php');
         </div>
         <div class="card-content pb-4">
           <?php
-          $sql = "SELECT * FROM tb_contact WHERE user_id = '$_SESSION[user_id]' LIMIT 3";
+          $sql = "SELECT * FROM tb_questionnaire 
+          LEFT JOIN
+          tb_user
+          ON
+          tb_user.user_id = tb_questionnaire.user_id 
+          WHERE tb_user.user_id = '$_SESSION[user_id]' LIMIT 3";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             // output data of each row
@@ -287,7 +292,7 @@ include('./header_back-end.php');
               <img src="./assets/back-end/mazer/dist/assets/images/faces/4.jpg">
             </div>
             <div class="name ms-4">
-              <h5 class="mb-1"><?php echo $row['contact_member'] ?></h5>
+              <h5 class="mb-1"><?php echo $row['user_name'] ?></h5>
               <!-- <h6 class="text-muted mb-0"><?php //echo $row['contact_email'] ?></h6> -->
             </div>
           </div>
