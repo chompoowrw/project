@@ -26,50 +26,44 @@
               <span>หน้าแรก</span>
             </a>
           </li>
-          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "customer.php") ? "active" : ""; ?>">
-            <a href="./customer.php" class='sidebar-link'>
+          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "user.php") ? "active" : ""; ?>">
+            <a href="./user.php" class='sidebar-link'>
               <!-- <i class="bi bi-grid-fill"></i> -->
-              <span>ข้อมูลลูกค้า</span>
+              <span>ข้อมูลผู้ใช้</span>
             </a>
           </li>
-          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "product.php") ? "active" : ""; ?>">
-            <a href="./product.php" class='sidebar-link'>
-              <!-- <i class="bi bi-grid-fill"></i> -->
-              <span>ข้อมูลสินค้า</span>
+          <!-- <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "proposal_price.php") ? "active" : ""; ?>">
+            <a href="./proposal_price.php" class='sidebar-link'>
+              <span>ข้อมูลใบเสนอราคา</span>
+            </a>
+          </li> -->
+          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "payment_status.php") ? "active" : ""; ?>">
+            <a href="./payment_status.php" class='sidebar-link'>
+              <span>ข้อมูลสถานะการชำระ</span>
             </a>
           </li>
-          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "brand.php") ? "active" : ""; ?>">
-            <a href="./brand.php" class='sidebar-link'>
-              <!-- <i class="bi bi-grid-fill"></i> -->
-              <span>ข้อมูลแบรนด์</span>
-            </a>
-          </li>
-          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "category.php") ? "active" : ""; ?>">
+          <!-- <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "category.php") ? "active" : ""; ?>">
             <a href="./category.php" class='sidebar-link'>
-              <!-- <i class="bi bi-grid-fill"></i> -->
               <span>ข้อมูลประเภท</span>
             </a>
-          </li>
+          </li> -->
           <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "feedback.php") ? "active" : ""; ?>">
             <a href="./feedback.php" class='sidebar-link'>
-              <!-- <i class="bi bi-grid-fill"></i> -->
               <span>ข้อมูล Feedback</span>
             </a>
           </li>
 
-          <li class="sidebar-title">รายงาน</li>
+          <!-- <li class="sidebar-title">รายงาน</li>
           <li class="sidebar-item  <?= (basename($_SERVER['PHP_SELF']) == "report_product.php") ? "active" : ""; ?>">
             <a href="./report_product.php" class='sidebar-link'>
-              <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
               <span>รายงานสินค้าคงเหลือ</span>
             </a>
           </li>
           <li class="sidebar-item  <?= (basename($_SERVER['PHP_SELF']) == "report_sale.php") ? "active" : ""; ?>">
             <a href="./report_sale.php" class='sidebar-link'>
-              <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
               <span>รายงานการขายสินค้า</span>
             </a>
-          </li>
+          </li> -->
 
           <li class="sidebar-title"></li>
           <li class="sidebar-item ">

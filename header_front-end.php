@@ -112,6 +112,9 @@
         <li class="u-nav-item">
           <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "payment.php") ? "active" : ""; ?>" href="./payment.php" style="padding: 10px 32px;">การชำระเงิน</a>
         </li>
+        <li class="u-nav-item">
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "bill.php") ? "active" : ""; ?>" href="./bill.php" style="padding: 10px 32px;">ประวัติการชำระ</a>
+        </li>
         <?php
         }
         ?>
@@ -150,6 +153,9 @@
             </li>
             <li class="u-nav-item">
               <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "payment.php") ? "active" : ""; ?>" href="./payment.php" style="padding: 10px 32px;">การชำระเงิน</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link <?= (basename($_SERVER['PHP_SELF']) == "bill_detail.php") ? "active" : ""; ?>" href="./bill_detail.php" style="padding: 10px 32px;">ประวัติการชำระ</a>
             </li>
             <?php
             }
