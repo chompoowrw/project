@@ -12,8 +12,8 @@
             <input type="hidden" placeholder="" id="user_id_reservation" name="user" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-1" value="<?php echo $_SESSION['user_id']; ?>">
           </div>
           <div class="u-form-group u-form-group-3">
-            <label for="name_reservation" class="u-custom-font u-label u-label-3">ชื่อ-นามสกุล</label>
-            <input type="text" placeholder="" id="name_reservation" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3" value="<?php echo $_SESSION['user_name']; ?>">
+            <label for="name_reservation" class="u-custom-font u-label u-label-3">รายการ</label>
+            <input type="text" placeholder="" id="name_reservation" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3" value="จองคิว">
           </div>
           <div class="u-form-group u-form-phone u-form-group-4">
             <label for="tel_reservation" class="u-custom-font u-label u-label-4">เบอร์โทร</label>
