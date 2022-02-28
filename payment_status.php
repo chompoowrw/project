@@ -117,9 +117,9 @@ if (isset($_POST["txtSearch"])) {
                     <td><?php echo $row['payment_date']; ?></td>
                     <td><?php echo $row['status_name']; ?></td>
                     <td>
-                      <a class="btn btn-danger" href="./bill_detail.php?payment_id=<?php echo $row["payment_id"]; ?>" data-toggle="tooltip" data-placement="top" title="Detail">
-                        <i class="fa fa-trash"></i>
-                      </a>
+                      <!-- <a class="btn btn-info" href="./bill_detail.php?payment_id=<?php //echo $row["payment_id"]; ?>" data-toggle="tooltip" data-placement="top" title="Detail">
+                        <i class="fa fa-eye"></i>
+                      </a> -->
                       <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bill_edit-<?php echo $row['payment_id']; ?>">
                         <i class="fa fa-edit"></i>
                       </button>
