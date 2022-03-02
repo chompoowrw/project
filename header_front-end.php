@@ -93,7 +93,7 @@
                                                 echo "active";
                                               } else {
                                                 echo "";
-                                              } ?>" href="./index.php" style="padding: 10px 32px;">home</a>
+                                              } ?>" href="./index.php" style="padding: 10px 32px;">หน้าแรก</a>
         </li>
         <li class="u-nav-item">
           <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "news.php") ? "active" : ""; ?>" href="./news.php" style="padding: 10px 32px;">ข่าวประชาสัมพันธ์</a>
