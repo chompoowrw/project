@@ -38,6 +38,15 @@
             <label for="bill_phone_bill" class=" form-control-label">เบอร์โทรศัพท์</label>
             <input type="text" id="bill_phone_bill" name="bill_phone_bill" placeholder="เบอร์โทรศัพท์" class="form-control" value="<?php echo $row["user_tel"]; ?>">
           </div>
+          <div class="form-group">
+            <label for="status_id_bill" class=" form-control-label">สถานะ</label>
+            <div class="radio">
+              <label><input type="radio" name="status_id_bill" value="2" <?php if($row['status_id']=="2"){ echo "checked";}?>> ส่งสลิปแล้ว</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="status_id_bill" value="3" <?php if($row['status_id']=="3"){ echo "checked";}?>> ชำระเงินแล้ว</label>
+            </div>
+          </div>
           <!-- <button class="btn btn-primary btn-block" type="button" onclick="createProduct()">
             บันทึก
           </button> -->

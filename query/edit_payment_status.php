@@ -7,6 +7,7 @@ $reservation_id = $_POST['reservation_id_bill'];
 $payment_id = $_POST['payment_id_bill'];
 $bill_name = $_POST['bill_name_bill'];
 $bill_phone = $_POST['bill_phone_bill'];
+$status_id = $_POST['status_id_bill'];
 
 $sql2 = "INSERT INTO tb_bill (user_id, reservation_id, payment_id, bill_name, bill_phone, bill_date) VALUES 
         (
@@ -21,7 +22,7 @@ $sql2 = "INSERT INTO tb_bill (user_id, reservation_id, payment_id, bill_name, bi
 $result2 = $conn->query($sql2);
 
 $sql = "UPDATE tb_reservation
-        SET status_id = '3'
+        SET status_id = '$status_id'
         WHERE reservation_id = '$reservation_id'
         ";
 $result = $conn->query($sql);

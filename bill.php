@@ -11,7 +11,7 @@
             <thead>
               <tr>
                 <th scope="col"><div align="center">ลำดับ</div></th>
-                <th scope="col"><div align="center">เลขที่ใบเสร็จ</div></th>
+                <th scope="col"><div align="center">เลขที่การชำระ</div></th>
                 <th scope="col">วันที่</th>
                 <th scope="col">สถานะ</th>
                 <th scope="col"><div align="center">ราคา</div></th>
@@ -35,7 +35,7 @@
                       tb_status
                       ON
                       tb_status.status_id = tb_reservation.status_id 
-                      WHERE tb_reservation.status_id = '3'";
+                      WHERE tb_reservation.status_id = '3' AND tb_bill.user_id = '$_SESSION[user_id]'";
               $result = $conn->query($sql);
 
               if ($result->num_rows > 0) {

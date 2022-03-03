@@ -24,7 +24,7 @@
               window.location.replace("index.php");
             } else {
               console.log(usr_login, pwd_login);
-              alert("เกิดข้อผิดพลาด กรุณาตรวจสอบ Username หรือ Password");
+              alert("ไม่พบข้อมูลสมัครสมาชิก");
             }
           });
         });
@@ -148,7 +148,7 @@
                 $("#name_reservation").val("");
                 $("#tel_reservation").val("");
                 $("#deposit_reservation").val("");
-                window.location.replace("index.php");
+                window.location.replace("payment.php");
               } else if (datacallback == "already") {
                 //alert("มีชื่อผู้ใช้นี้อยู่ในระบบแล้ว");
                 console.log(user_id_reservation + name_reservation + phone_reservation + deposit_reservation);

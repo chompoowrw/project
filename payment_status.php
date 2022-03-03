@@ -57,6 +57,7 @@ if (isset($_POST["txtSearch"])) {
                   <tr>
                     <th class="text-center">ลำดับ</th>
                     <th class="text-center">เลขที่ใบเสร็จ</th>
+                    <th>หลักฐานการโอนเงิน</th>
                     <th>ชื่อ</th>
                     <th>วันที่</th>
                     <th>สถานะ</th>
@@ -112,6 +113,7 @@ if (isset($_POST["txtSearch"])) {
                   <tr>
                     <td class="text-center"><?php echo $i; ?></td>
                     <td class="text-center"><?php echo $row['payment_id']; ?></td>
+                    <td><img src="./pay/<?php echo $row['slip']; ?>" alt=""></td>
                     <td><?php echo $row['user_name']; ?></td>
                     <!-- <td><?php echo $row['reservation_name']; ?></td> -->
                     <td><?php echo $row['payment_date']; ?></td>
@@ -307,6 +309,7 @@ function editBill() {
   let payment_id_bill = $('#payment_id_bill').val();
   let bill_name_bill = $('#bill_name_bill').val();
   let bill_phone_bill = $('#bill_phone_bill').val();
+  var status_id_bill = $("input[name=status_id_bill]:checked").val();
   $.ajax({
     url: 'query/edit_payment_status.php',
     type: 'post',
@@ -315,7 +318,8 @@ function editBill() {
       'reservation_id_bill': reservation_id_bill,
       'payment_id_bill': payment_id_bill,
       'bill_name_bill': bill_name_bill,
-      'bill_phone_bill': bill_phone_bill
+      'bill_phone_bill': bill_phone_bill,
+      'status_id_bill': status_id_bill
     },
     success: function(response) {
       console.log(response);
