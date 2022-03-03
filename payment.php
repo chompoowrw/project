@@ -55,7 +55,6 @@
             <input type="submit" value="submit" class="u-form-control-hidden">
           </div>
           <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-          <div class="u-form-send-error u-form-send-message"> กรุณากรอกข้อมูลให้ครบถ้วน </div>
           <input type="hidden" value="" name="recaptchaResponse">
         </form>
       </div>
