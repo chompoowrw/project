@@ -114,4 +114,4 @@ require_once("connect.php");
 </div>
 </body>
 </html>
-<? $conn->Close();//ปิดการเชื่อมต่อกับฐานข้อมูล?>
+<?php $conn->Close();//ปิดการเชื่อมต่อกับฐานข้อมูล?>

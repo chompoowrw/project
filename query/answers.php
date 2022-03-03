@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "INSERT INTO tb_questionnaire (user_id, 
         questionnaire_date, 
-        answer) 
+        question) 
       VALUES ('$user_id_answer',
         '" . date('Y-m-d') . "',
         '$answer_answer')";
