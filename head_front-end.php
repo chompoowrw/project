@@ -1,77 +1,50 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Signin Template · Bootstrap v5.1</title>
+<?php
+session_start();
+date_default_timezone_set("Asia/Bangkok");
+include('./connect.php');
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+$strKeyword = null;
 
-    
+if (isset($_POST["txtSearch"])) {
+  $strKeyword = $_POST["txtSearch"];
+}
 
-    <!-- Bootstrap core CSS -->
-<!-- CSS only -->
+if (isset($_SESSION["user_username"])) {
+  if ($_SESSION["role_id"] == "1") {
+    header("location: ./home.php");
+  }
+}
+?>
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="สอบถามข้อมูลเพิ่มเติม">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>บริษัท นากาโน คอนสตรั๊คชั่น แอนด์ อินทีเรีย จำกัด</title>
+  <link rel="stylesheet" href="./assets/css/nicepage.css" media="screen">
+  <script class="u-script" type="text/javascript" src="./assets/js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="./assets/js/nicepage.js" defer=""></script>
+  <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Favicons -->
-<meta name="theme-color" content="#7952b3">
+  <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
+  <meta property="og:image"
+    content="https://www.thaicontractor.com/tag/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87/images/a9b604b59095b061c297794db78fe1bdddadd1ee26757cf6b7dd9f4d507555ad19539f730b7a933c813343e4c55b236f697a2f5f8976a34cc2601d_1280.jpg">
+  <meta property="og:url"
+    content="https://www.thaicontractor.com/tag/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87/">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      html,
-body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
-}
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-    </style>
-  </head>
-  <body class="text-center">
+  <script type="application/ld+json">
+    {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1"
+  }
+  </script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="หน้าแรก">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
