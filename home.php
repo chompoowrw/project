@@ -281,7 +281,7 @@ include('./header_back-end.php');
           tb_user
           ON
           tb_user.user_id = tb_questionnaire.user_id 
-          WHERE tb_user.user_id = '$_SESSION[user_id]' LIMIT 3";
+          LIMIT 3";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             // output data of each row

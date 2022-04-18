@@ -80,7 +80,7 @@ if (isset($_POST["txtSearch"])) {
                   $next_page = $page_no + 1;
                   $adjacents = "2";
 
-                  $result_count = mysqli_query($conn, "SELECT COUNT(*) As total_records FROM `tb_proposal_price`");
+                  $result_count = mysqli_query($conn, "SELECT COUNT(*) As total_records FROM `tb_payment`");
                   $total_records = mysqli_fetch_array($result_count);
                   $total_records = $total_records['total_records'];
                   $total_no_of_pages = ceil($total_records / $total_records_per_page);
@@ -113,7 +113,7 @@ if (isset($_POST["txtSearch"])) {
                   <tr>
                     <td class="text-center"><?php echo $i; ?></td>
                     <td class="text-center"><?php echo $row['payment_id']; ?></td>
-                    <td><img src="./pay/<?php echo $row['slip']; ?>" alt=""></td>
+                    <td><img width="100" src="./pay/<?php echo $row['slip']; ?>.jpg" alt=""></td>
                     <td><?php echo $row['user_name']; ?></td>
                     <!-- <td><?php echo $row['reservation_name']; ?></td> -->
                     <td><?php echo $row['payment_date']; ?></td>
