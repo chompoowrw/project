@@ -5,15 +5,9 @@ define("PRODUCTION", $_SERVER["SERVER_NAME"] == "web.rmutp.ac.th");
 if (PRODUCTION) {
   # Production
   $servername = "localhost";
-<<<<<<< HEAD
-  $username = "luxurybyfon";
-  $password = "mj95c2gx";
-  $dbname = "luxurybyfon";
-=======
   $username = "ngn";
   $password = "y$?m22sj";
   $dbname = "ngn";
->>>>>>> 546a947cbdf768d09539a051bcb7664db72a7808
 } else {
   # Development
   $servername = "localhost";
