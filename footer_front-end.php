@@ -24,7 +24,7 @@
               window.location.replace("index.php");
             } else {
               console.log(usr_login, pwd_login);
-              alert("ไม่พบข้อมูลสมัครสมาชิก");
+              alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
             }
           });
         });
@@ -42,11 +42,7 @@
 
           if (name_regis == "") {
             alert("กรุณากรอกข้อมูลให้ครบถ้วน");
-          } else if (email_regis == "") {
-            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
           } else if (tel_regis == "") {
-            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
-          } else if (line_id_regis == "") {
             alert("กรุณากรอกข้อมูลให้ครบถ้วน");
           } else if (usr_regis == "") {
             alert("กรุณากรอกข้อมูลให้ครบถ้วน");
@@ -106,7 +102,7 @@
               answer_answer: answer_answer
             }, function(datacallback) {
               if (datacallback == "success") {
-                alert("ส่งสอบถามสำเร็จ");
+                alert("ส่งข้อมูลสำเร็จ");
                 $("#answer_answer").val("");
                 window.location.replace("index.php");
               } else if (datacallback == "already") {

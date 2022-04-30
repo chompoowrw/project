@@ -4,7 +4,7 @@
 <body class="u-body u-xl-mode">
   <?php include("./header_front-end.php"); ?>
 
-  <?php include("./image.php"); ?>
+  <?php //include("./image.php"); ?>
   <section class="u-clearfix u-section-2" id="sec-ddc0">
     <div class="u-clearfix u-sheet u-sheet-1">
       <h2 class="u-align-center u-custom-font u-text u-text-default u-text-1"> โครงการปรับปรุงอาคารแพทยพัฒน์

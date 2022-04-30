@@ -9,19 +9,19 @@
       <div class="u-form u-form-1">
         <form action="#" method="POST" class="u-clearfix u-form-spacing-25 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 30px;" novalidate>
           <div class="u-form-group u-form-name">
-            <label for="username_regis" class="u-custom-font u-label u-label-1">ชื่อผู้ใช้</label>
+            <label for="username_regis" class="u-custom-font u-label u-label-1">ชื่อผู้ใช้ <font style="color:red">*</font></label>
             <input type="text" placeholder="" id="username_regis" name="user" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-1" required="">
           </div>
           <div class="u-form-group">
-            <label for="password_regis" class="u-custom-font u-label u-label-2">รหัสผ่าน</label>
+            <label for="password_regis" class="u-custom-font u-label u-label-2">รหัสผ่าน <font style="color:red">*</font></label>
             <input type="password" placeholder="" id="password_regis" name="password" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-2" required="required">
           </div>
           <div class="u-form-group">
-            <label for="confirm_password" class="u-custom-font u-label u-label-2">ยืนยันรหัสผ่าน</label>
+            <label for="confirm_password" class="u-custom-font u-label u-label-2">ยืนยันรหัสผ่าน <font style="color:red">*</font></label>
             <input type="password" placeholder="" id="confirm_password" name="password" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-2" required="required">
           </div>
           <div class="u-form-group u-form-group-3">
-            <label for="name_regis" class="u-custom-font u-label u-label-3">ชื่อ-นามสกุล</label>
+            <label for="name_regis" class="u-custom-font u-label u-label-3">ชื่อ-นามสกุล <font style="color:red">*</font></label>
             <input type="text" placeholder="" id="name_regis" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3">
           </div>
           <div class="u-form-email u-form-group u-form-group-5">
@@ -29,11 +29,11 @@
             <input type="email" placeholder="" id="email_regis" name="email" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-5">
           </div>
           <div class="u-form-group u-form-phone u-form-group-4">
-            <label for="tel_regis" class="u-custom-font u-label u-label-4">เบอร์โทร</label>
+            <label for="tel_regis" class="u-custom-font u-label u-label-4">เบอร์โทร <font style="color:red">*</font></label>
             <input type="tel" placeholder="" id="tel_regis" name="tell" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-4">
           </div>
           <div class="u-form-group u-form-group-6">
-            <label for="line_id_regis" class="u-custom-font u-label u-label-6">ไอดีไลน์</label>
+            <label for="line_id_regis" class="u-custom-font u-label u-label-6">ไอดีไลน์ </label>
             <input type="text" placeholder="" id="line_id_regis" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
           </div>
           <div class="u-align-right u-form-group u-form-submit">

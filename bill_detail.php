@@ -101,11 +101,13 @@ require_once("connect.php");
         <td><strong>รายการ</strong></td>
         <td><strong>ราคา</strong></td>
       </tr>
+  
       <?php echo $order_details ?>
       <tr>
         <td colspan="1" align="right"><strong>รวมเงินทั้งสิ้น</strong></td>
         <td><?=$total?></td>
       </tr>
+      
     </table>
   </div>
   <?php

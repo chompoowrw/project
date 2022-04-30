@@ -4,7 +4,7 @@
 <body class="u-body u-xl-mode">
   <?php include("./header_front-end.php"); ?>
 
-  <?php include("./image.php"); ?>
+  <?php //include("./image.php"); ?>
   <section class="u-border-6 u-border-no-left u-border-no-right u-border-no-top u-border-palette-3-light-1 u-clearfix u-custom-border u-white u-section-2" id="sec-453a">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       <img class="u-image u-image-default u-preserve-proportions u-image-1" src="./assets/images/5.png" alt="" data-image-width="120" data-image-height="102">

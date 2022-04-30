@@ -12,9 +12,84 @@ include('./header_back-end.php');
 <div class="page-heading">
   <h3>หน้าแรก</h3>
 </div>
+<div class="card">
+        <div class="card-body py-4 px-5">
+          <div class="d-flex align-items-center">
+            <?php
+            $sql = "SELECT user_id, 
+            user_name, 
+            user_username 
+            FROM tb_user WHERE user_id = $_SESSION[user_id]";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              // output data of each row
+              while ($row = $result->fetch_assoc()) {
+            ?>
+            <div class="ms-3 name">
+              <h5 class="font-bold"><?php echo $row['user_name'] ?></h5>
+              <h6 class="text-muted mb-0"><?php echo $row['user_username'] ?></h6>
+            </div>
+            <?php
+              } //while condition closing bracket
+            }  //if condition closing bracket
+            ?>
+          </div>
+        </div>
 <div class="page-content">
   <section class="row">
     <div class="col-12 col-lg-9">
+    <div class="card">
+        <div class="card-header">
+          <h4>ข้อความล่าสุด</h4>
+        </div>
+        <div class="card-content pb-4">
+          <?php
+          $sql = "SELECT * FROM tb_questionnaire 
+          LEFT JOIN
+          tb_user
+          ON
+          tb_user.user_id = tb_questionnaire.user_id 
+          LIMIT 3";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+          ?>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/4.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1"><?php echo $row['user_name'] ?></h5>
+              <!-- <h6 class="text-muted mb-0"><?php //echo $row['contact_email'] ?></h6> -->
+            </div>
+          </div>
+          <?php
+            } //while condition closing bracket
+          }  //if condition closing bracket
+          ?>
+          <!-- <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/5.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">Dean Winchester</h5>
+              <h6 class="text-muted mb-0">@imdean</h6>
+            </div>
+          </div>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/1.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">John Dodol</h5>
+              <h6 class="text-muted mb-0">@dodoljohn</h6>
+            </div>
+          </div> -->
+          <div class="px-4">
+            <a href="./feedback.php" class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>ดูข้อมูล Feedback</a>
+          </div>
+        </div>
       <!-- <div class="row">
         <div class="col-6 col-lg-3 col-md-6">
           <div class="card">
@@ -245,8 +320,7 @@ include('./header_back-end.php');
         </div>
       </div> -->
     </div>
-    <div class="col-12 col-lg-3">
-      <div class="card">
+      <!--<div class="card">
         <div class="card-body py-4 px-5">
           <div class="d-flex align-items-center">
             <?php
@@ -269,8 +343,7 @@ include('./header_back-end.php');
             ?>
           </div>
         </div>
-      </div>
-      <div class="card">
+      <!--<div class="card">
         <div class="card-header">
           <h4>ข้อความล่าสุด</h4>
         </div>
@@ -318,11 +391,11 @@ include('./header_back-end.php');
               <h6 class="text-muted mb-0">@dodoljohn</h6>
             </div>
           </div> -->
-          <div class="px-4">
+          <!--<div class="px-4">
             <a href="./feedback.php" class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>ดูข้อมูล Feedback</a>
           </div>
         </div>
-      </div>
+      </div>-->
       <!-- <div class="card">
         <div class="card-header">
           <h4>Visitors Profile</h4>

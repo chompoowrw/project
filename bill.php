@@ -35,7 +35,7 @@
                       tb_status
                       ON
                       tb_status.status_id = tb_reservation.status_id 
-                      WHERE tb_reservation.status_id = '3' AND tb_bill.user_id = '$_SESSION[user_id]'";
+                      WHERE tb_bill.user_id = '$_SESSION[user_id]'";
               $result = $conn->query($sql);
 
               if ($result->num_rows > 0) {

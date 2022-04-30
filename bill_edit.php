@@ -40,9 +40,9 @@
           </div>
           <div class="form-group">
             <label for="status_id_bill" class=" form-control-label">สถานะ</label>
-            <div class="radio">
+            <!--<div class="radio">
               <label><input type="radio" name="status_id_bill" value="2" <?php if($row['status_id']=="2"){ echo "checked";}?>> ส่งสลิปแล้ว</label>
-            </div>
+            </div>-->
             <div class="radio">
               <label><input type="radio" name="status_id_bill" value="3" <?php if($row['status_id']=="3"){ echo "checked";}?>> ชำระเงินแล้ว</label>
             </div>

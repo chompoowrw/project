@@ -119,7 +119,7 @@
         }
         ?>
         <li class="u-nav-item">
-          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ศักยภาพ</a>
+          <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "potential.php") ? "active" : ""; ?>" href="./potential.php" style="padding: 10px 32px;">ผลงาน</a>
         </li>
         <li class="u-nav-item">
           <a class="u-active-white u-button-style u-hover-grey-10 u-nav-link u-text-active-black u-text-body-alt-color u-text-hover-grey-90 <?= (basename($_SERVER['PHP_SELF']) == "contact.php") ? "active" : ""; ?>" href="./contact.php" style="padding: 10px 32px;">ติดต่อเรา</a>

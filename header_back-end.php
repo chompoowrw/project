@@ -32,38 +32,17 @@
               <span>ข้อมูลผู้ใช้</span>
             </a>
           </li>
-          <!-- <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "proposal_price.php") ? "active" : ""; ?>">
-            <a href="./proposal_price.php" class='sidebar-link'>
-              <span>ข้อมูลใบเสนอราคา</span>
-            </a>
-          </li> -->
-          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "payment_status.php") ? "active" : ""; ?>">
-            <a href="./payment_status.php" class='sidebar-link'>
-              <span>ข้อมูลสถานะการชำระ</span>
-            </a>
-          </li>
-          <!-- <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "category.php") ? "active" : ""; ?>">
-            <a href="./category.php" class='sidebar-link'>
-              <span>ข้อมูลประเภท</span>
-            </a>
-          </li> -->
           <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "feedback.php") ? "active" : ""; ?>">
             <a href="./feedback.php" class='sidebar-link'>
               <span>ข้อมูล Feedback</span>
             </a>
           </li>
-
-          <!-- <li class="sidebar-title">รายงาน</li>
-          <li class="sidebar-item  <?= (basename($_SERVER['PHP_SELF']) == "report_product.php") ? "active" : ""; ?>">
-            <a href="./report_product.php" class='sidebar-link'>
-              <span>รายงานสินค้าคงเหลือ</span>
+          <li class="sidebar-item <?= (basename($_SERVER['PHP_SELF']) == "payment_status.php") ? "active" : ""; ?>">
+            <a href="./payment_status.php" class='sidebar-link'>
+              <span>ข้อมูลสถานะการชำระ</span>
             </a>
           </li>
-          <li class="sidebar-item  <?= (basename($_SERVER['PHP_SELF']) == "report_sale.php") ? "active" : ""; ?>">
-            <a href="./report_sale.php" class='sidebar-link'>
-              <span>รายงานการขายสินค้า</span>
-            </a>
-          </li> -->
+
 
           <li class="sidebar-title"></li>
           <li class="sidebar-item ">

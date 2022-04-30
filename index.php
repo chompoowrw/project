@@ -27,7 +27,7 @@
   <section class="u-clearfix u-white u-section-3" id="sec-179c">
     <div class="u-clearfix u-sheet u-sheet-1">
       <p class="u-custom-font u-text u-text-default u-text-1">
-        <span style="font-size: 3.75rem; font-weight: 400;">ศักยภาพ</span>
+        <span style="font-size: 3.75rem; font-weight: 400;">ผลงาน</span>
         <span style="font-weight: 700;"></span>
       </p>
       <div class="u-carousel u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-on-hover u-gallery-1" data-interval="2000" data-u-ride="carousel" id="carousel-3de1" data-pause="false">

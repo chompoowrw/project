@@ -101,7 +101,8 @@ if (isset($_POST["txtSearch"])) {
                   tb_status
                   ON
                   tb_reservation.status_id = tb_status.status_id 
-                  WHERE tb_reservation.status_id = '2'
+                  
+                  
                   LIMIT $offset, $total_records_per_page
                   ";
                   $result = $conn->query($sql);
@@ -155,7 +156,7 @@ if (isset($_POST["txtSearch"])) {
               tb_status
               ON
               tb_reservation.status_id = tb_status.status_id 
-              WHERE tb_reservation.status_id = '2'
+              
               ";
               $result2 = $conn->query($sql2);
 
