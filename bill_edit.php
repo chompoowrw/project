@@ -13,8 +13,9 @@
           <div class="form-group">
             <input type="hidden" id="payment_id_bill" name="payment_id_bill" placeholder="" class="form-control" value="<?php echo $row["payment_id"]; ?>">
             <input type="hidden" id="user_id_bill" name="user_id_bill" placeholder="ชื่อ" class="form-control" value="<?php echo $row["user_id"]; ?>">
+            <input type="text" id="reservation_id_bill" name="reservation_id_bill" placeholder="" class="form-control" value="<?php echo $row["reservation_id"]; ?>">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="reservation_id_bill" class=" form-control-label">การจอง</label>
             <select class="form-select" id="reservation_id_bill" name="reservation_id_bill" required>
               <?php
@@ -29,6 +30,10 @@
               }
               ?>
             </select>
+          </div> -->
+          <div class="form-group">
+            <label for="reservation_id_bill" class=" form-control-label">การจอง</label>
+            <input type="text" id="reservation_name_bill" name="reservation_name_bill" placeholder="การจอง" class="form-control" value="<?php echo $row["reservation_name"]; ?>">
           </div>
           <div class="form-group">
             <label for="bill_name_bill" class=" form-control-label">ชื่อ</label>

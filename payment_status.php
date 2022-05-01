@@ -56,7 +56,7 @@ if (isset($_POST["txtSearch"])) {
                 <thead>
                   <tr>
                     <th class="text-center">ลำดับ</th>
-                    <th class="text-center">เลขที่ใบเสร็จ</th>
+                    <th class="text-center">เลขที่การชำระเงิน</th>
                     <th>หลักฐานการโอนเงิน</th>
                     <th>ชื่อ</th>
                     <th>วันที่</th>
@@ -88,21 +88,28 @@ if (isset($_POST["txtSearch"])) {
 
                   $i = 1;
 
-                  $sql = "SELECT * FROM tb_payment
+                  $sql = "SELECT pay.payment_id, 
+                  pay.slip,
+                  pay.user_id, 
+                  user.user_name,
+                  pay.payment_date,
+                  pay.reservation_id, 
+                  res.reservation_name,
+                  res.status_id,
+                  status.status_name
+                  FROM tb_payment AS pay
                   LEFT JOIN
-                  tb_user
+                  tb_user AS user
                   ON
-                  tb_payment.user_id = tb_user.user_id 
+                  pay.user_id = user.user_id 
                   LEFT JOIN
-                  tb_reservation
+                  tb_reservation AS res
                   ON
-                  tb_payment.reservation_id = tb_reservation.reservation_id 
+                  pay.reservation_id = res.reservation_id 
                   LEFT JOIN
-                  tb_status
+                  tb_status AS status
                   ON
-                  tb_reservation.status_id = tb_status.status_id 
-                  
-                  
+                  res.status_id = status.status_id 
                   LIMIT $offset, $total_records_per_page
                   ";
                   $result = $conn->query($sql);
@@ -120,12 +127,12 @@ if (isset($_POST["txtSearch"])) {
                     <td><?php echo $row['payment_date']; ?></td>
                     <td><?php echo $row['status_name']; ?></td>
                     <td>
-                      <!-- <a class="btn btn-info" href="./bill_detail.php?payment_id=<?php //echo $row["payment_id"]; ?>" data-toggle="tooltip" data-placement="top" title="Detail">
-                        <i class="fa fa-eye"></i>
-                      </a> -->
-                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bill_edit-<?php echo $row['payment_id']; ?>">
+                      <a class="btn btn-warning" href="./payment_edit.php?payment_id=<?php echo $row["payment_id"]; ?>" data-toggle="tooltip" data-placement="top" title="Detail">
+                      <i class="fa fa-edit"></i>
+                      </a>
+                      <!-- <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bill_edit-<?php echo $row['payment_id']; ?>">
                         <i class="fa fa-edit"></i>
-                      </button>
+                      </button> -->
                     </td>
                   </tr>
                   <?php
@@ -143,29 +150,37 @@ if (isset($_POST["txtSearch"])) {
                 </tbody>
               </table>
               <?php 
-              $sql2 = "SELECT * FROM tb_payment
-              LEFT JOIN
-              tb_user
-              ON
-              tb_payment.user_id = tb_user.user_id 
-              LEFT JOIN
-              tb_reservation
-              ON
-              tb_payment.reservation_id = tb_reservation.reservation_id 
-              LEFT JOIN
-              tb_status
-              ON
-              tb_reservation.status_id = tb_status.status_id 
-              
-              ";
-              $result2 = $conn->query($sql2);
+              // $sql2 = "SELECT pay.payment_id, 
+              // pay.slip,
+              // pay.user_id, 
+              // user.user_name,
+              // user.user_tel,
+              // pay.payment_date,
+              // pay.reservation_id, 
+              // res.reservation_name,
+              // res.status_id,
+              // status.status_name
+              // FROM tb_payment AS pay
+              // LEFT JOIN
+              // tb_user AS user
+              // ON
+              // pay.user_id = user.user_id 
+              // LEFT JOIN
+              // tb_reservation AS res
+              // ON
+              // pay.reservation_id = res.reservation_id 
+              // LEFT JOIN
+              // tb_status AS status
+              // ON
+              // res.status_id = status.status_id ";
+              // $result2 = $conn->query($sql2);
 
-              if ($result2->num_rows > 0) {
-                // output data of each row
-                while ($row = $result2->fetch_assoc()) {
-              include('./bill_edit.php'); 
-                }
-              }
+              // if ($result2->num_rows > 0) {
+              //   // output data of each row
+              //   while ($row = $result2->fetch_assoc()) {
+              // include('./bill_edit.php'); 
+              //   }
+              // }
               ?>
               <hr>
               <!-- <div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
@@ -268,40 +283,6 @@ if (isset($_POST["txtSearch"])) {
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./assets/back-end/mazer/dist/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="./assets/back-end/mazer/dist/assets/js/bootstrap.bundle.min.js"></script>
-
-<script>
-    $('.del-btn').on('click', function(e) {
-      e.preventDefault();
-      const href = $(this).attr('href')
-      Swal.fire({
-        title: 'คุณแน่ใจหรือไม่?',
-        text: 'คุณจะไม่สามารถเปลี่ยนกลับได้!',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'OK'
-      }).then((result) => {
-        if (result.value) {
-          document.location.href = href;
-        }
-      })
-    })
-
-    const flashdata = $('.flash-data').data('flashdata')
-    if (flashdata) {
-      Swal.fire({
-        icon: 'success',
-        title: 'ลบข้อมูลสำเร็จ',
-        showConfirmButton: false,
-        timer: 2000
-      }).then((result) => {
-        if (result.isDismissed) {
-          window.location.href = 'proposal_price.php';
-        }
-      })
-    }
-</script>
 
 <script>
 function editBill() {
