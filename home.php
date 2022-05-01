@@ -1,234 +1,414 @@
+<?php
+include('./head_back-end.php');
+include('./header_back-end.php');
+?>
 
-<?php include("./head.php"); ?>
-<?php include("./header.php"); ?>
+<header class="mb-3">
+  <a href="#" class="burger-btn d-block d-xl-none">
+    <i class="bi bi-justify fs-3"></i>
+  </a>
+</header>
 
-<section class="u-carousel u-carousel-left u-slide u-block-0022-1" id="carousel_40a9" data-interval="2000"
-    data-u-ride="carousel" data-pause="false">
-    <ol class="u-absolute-hcenter u-carousel-indicators u-block-0022-2">
-      <li data-u-target="#carousel_40a9" data-u-slide-to="0" class="u-active u-grey-30"></li>
-      <li data-u-target="#carousel_40a9" class="u-grey-30" data-u-slide-to="1"></li>
-      <li data-u-target="#carousel_40a9" class="u-grey-30" data-u-slide-to="2"></li>
-      <li data-u-target="#carousel_40a9" class="u-grey-30" data-u-slide-to="3"></li>
-    </ol>
-    <div class="u-carousel-inner" role="listbox">
-      <div class="u-active u-carousel-item u-clearfix u-image u-shading u-section-1-1" data-image-width="1280"
-        data-image-height="720">
-        <div class="u-clearfix u-sheet u-sheet-1">
-          <p class="u-align-right u-custom-font u-text u-text-default u-text-1">
-            บริษัท นากาโน คอนสตรั๊คชั่น แอนด์ อินทีเรีย จำกัด<br />
-            <span style="font-size: 3rem">
-              <span style="font-size: 2.5rem">NAGANO CONSTRUCTION &amp; INTERIOR CO., LTD</span>
-            </span>
-            <span style="font-size: 2.5rem">.</span>
-            <br />
-          </p>
-        </div>
-      </div>
-      <div class="u-carousel-item u-clearfix u-image u-shading u-section-1-2" data-image-width="1024"
-        data-image-height="683">
-        <div class="u-clearfix u-sheet u-sheet-1">
-          <p class="u-align-right u-custom-font u-text u-text-default u-text-1">
-            บริษัท นากาโน คอนสตรั๊คชั่น แอนด์ อินทีเรีย จำกัด<br />
-            <span style="font-size: 3rem">
-              <span style="font-size: 2.5rem">NAGANO CONSTRUCTION &amp; INTERIOR CO., LTD</span>
-            </span>
-            <span style="font-size: 2.5rem">.</span>
-            <br />
-          </p>
-        </div>
-      </div>
-      <div class="u-carousel-item u-clearfix u-image u-shading u-section-1-3" data-image-width="2048"
-        data-image-height="1357">
-        <div class="u-clearfix u-sheet u-sheet-1">
-          <p class="u-align-right u-custom-font u-text u-text-default u-text-1">
-            บริษัท นากาโน คอนสตรั๊คชั่น แอนด์ อินทีเรีย จำกัด<br />
-            <span style="font-size: 3rem">
-              <span style="font-size: 2.5rem">NAGANO CONSTRUCTION &amp; INTERIOR CO., LTD</span>
-            </span>
-            <span style="font-size: 2.5rem">.</span>
-            <br />
-          </p>
-        </div>
-      </div>
-    </div>
-    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-text-grey-30 u-block-0022-3"
-      href="#carousel_40a9" role="button" data-u-slide="prev">
-      <span aria-hidden="true">
-        <svg viewBox="0 0 477.175 477.175">
-          <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path>
-        </svg>
-      </span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="u-carousel-control u-carousel-control-next u-hidden u-text-grey-30 u-block-0022-4" href="#carousel_40a9"
-      role="button" data-u-slide="next">
-      <span aria-hidden="true">
-        <svg viewBox="0 0 477.175 477.175">
-          <path
-            d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z">
-          </path>
-        </svg>
-      </span>
-      <span class="sr-only">Next</span>
-    </a>
-  </section>
-  <section class="u-clearfix u-white u-section-2" id="sec-4825">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-custom-font u-text u-text-default u-text-1">
-        ข่าวประชาสัมพันธ์
-      </p>
-    </div>
-  </section>
-  <section class="u-clearfix u-white u-section-3" id="sec-179c">
-    <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-custom-font u-text u-text-default u-text-1">
-        <span style="font-size: 3.75rem; font-weight: 400">ศักยภาพ</span>
-        <span style="font-weight: 700"></span>
-      </p>
-      <div
-        class="u-carousel u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-on-hover u-gallery-1"
-        data-interval="2000" data-u-ride="carousel" id="carousel-3de1" data-pause="false">
-        <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
-          <li data-u-target="#carousel-3de1" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-          <li data-u-target="#carousel-3de1" data-u-slide-to="1" class="u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-          <li data-u-target="#carousel-3de1" data-u-slide-to="2" class="u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-          <li data-u-target="#carousel-3de1" data-u-slide-to="3" class="u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-          <li data-u-target="#carousel-3de1" data-u-slide-to="4" class="u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-          <li data-u-target="#carousel-3de1" data-u-slide-to="5" class="u-grey-70 u-shape-circle"
-            style="width: 10px; height: 10px"></li>
-        </ol>
-        <div class="u-carousel-inner u-gallery-inner" role="listbox">
-          <div class="u-active u-carousel-item u-effect-fade u-gallery-item u-carousel-item-1">
-            <div class="u-back-slide" data-image-width="1280" data-image-height="858">
-              <img class="u-back-image u-expanded" src="images/6.jpg" />
+<div class="page-heading">
+  <h3>หน้าแรก</h3>
+</div>
+<div class="card">
+        <div class="card-body py-4 px-5">
+          <div class="d-flex align-items-center">
+            <?php
+            $sql = "SELECT user_id, 
+            user_name, 
+            user_username 
+            FROM tb_user WHERE user_id = $_SESSION[user_id]";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              // output data of each row
+              while ($row = $result->fetch_assoc()) {
+            ?>
+            <div class="ms-3 name">
+              <h5 class="font-bold"><?php echo $row['user_name'] ?></h5>
+              <h6 class="text-muted mb-0"><?php echo $row['user_username'] ?></h6>
             </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1">
-              <h3 class="u-gallery-heading">Sample Title</h3>
-              <p class="u-gallery-text">Sample Text</p>
-            </div>
-          </div>
-          <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-2">
-            <div class="u-back-slide" data-image-width="1280" data-image-height="960">
-              <img class="u-back-image u-expanded" src="images/664.jpg" />
-            </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2">
-              <h3 class="u-gallery-heading">Sample Title</h3>
-              <p class="u-gallery-text">Sample Text</p>
-            </div>
-          </div>
-          <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-3" data-image-width="942"
-            data-image-height="530">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/LINE_ALBUM__.jpg" />
-            </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-            <style data-mode="XL"></style>
-            <style data-mode="LG"></style>
-            <style data-mode="MD"></style>
-            <style data-mode="SM"></style>
-            <style data-mode="XS"></style>
-          </div>
-          <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-4" data-image-width="1280"
-            data-image-height="960">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/LINE_ALBUM_._.jpg" />
-            </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-            <style data-mode="XL"></style>
-            <style data-mode="LG"></style>
-            <style data-mode="MD"></style>
-            <style data-mode="SM"></style>
-            <style data-mode="XS"></style>
-          </div>
-          <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-5" data-image-width="1280"
-            data-image-height="960">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/LINE_ALBUM_.._.jpg" />
-            </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-5">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-            <style data-mode="XL"></style>
-            <style data-mode="LG"></style>
-            <style data-mode="MD"></style>
-            <style data-mode="SM"></style>
-            <style data-mode="XS"></style>
-          </div>
-          <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-6" data-image-width="1280"
-            data-image-height="960">
-            <div class="u-back-slide">
-              <img class="u-back-image u-expanded" src="images/5551.jpg" />
-            </div>
-            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-6">
-              <h3 class="u-gallery-heading"></h3>
-              <p class="u-gallery-text"></p>
-            </div>
-            <style data-mode="XL"></style>
-            <style data-mode="LG"></style>
-            <style data-mode="MD"></style>
-            <style data-mode="SM"></style>
-            <style data-mode="XS"></style>
+            <?php
+              } //while condition closing bracket
+            }  //if condition closing bracket
+            ?>
           </div>
         </div>
-        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1"
-          href="#carousel-3de1" role="button" data-u-slide="prev">
-          <span aria-hidden="true">
-            <svg viewBox="0 0 451.847 451.847">
-              <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
-            </svg>
-          </span>
-          <span class="sr-only">
-            <svg viewBox="0 0 451.847 451.847">
-              <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
-            </svg>
-          </span>
-        </a>
-        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2"
-          href="#carousel-3de1" role="button" data-u-slide="next">
-          <span aria-hidden="true">
-            <svg viewBox="0 0 451.846 451.847">
-              <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
-            </svg>
-          </span>
-          <span class="sr-only">
-            <svg viewBox="0 0 451.846 451.847">
-              <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
-            </svg>
-          </span>
-        </a>
+<div class="page-content">
+  <section class="row">
+    <div class="col-12 col-lg-9">
+    <div class="card">
+        <div class="card-header">
+          <h4>ข้อความล่าสุด</h4>
+        </div>
+        <div class="card-content pb-4">
+          <?php
+          $sql = "SELECT * FROM tb_questionnaire 
+          LEFT JOIN
+          tb_user
+          ON
+          tb_user.user_id = tb_questionnaire.user_id 
+          LIMIT 3";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+          ?>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/4.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1"><?php echo $row['user_name'] ?></h5>
+              <!-- <h6 class="text-muted mb-0"><?php //echo $row['contact_email'] ?></h6> -->
+            </div>
+          </div>
+          <?php
+            } //while condition closing bracket
+          }  //if condition closing bracket
+          ?>
+          <!-- <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/5.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">Dean Winchester</h5>
+              <h6 class="text-muted mb-0">@imdean</h6>
+            </div>
+          </div>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/1.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">John Dodol</h5>
+              <h6 class="text-muted mb-0">@dodoljohn</h6>
+            </div>
+          </div> -->
+          <div class="px-4">
+            <a href="./feedback.php" class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>ดูข้อมูล Feedback</a>
+          </div>
+        </div>
+      <!-- <div class="row">
+        <div class="col-6 col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body px-3 py-4-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="stats-icon blue">
+                  </div>
+                </div>
+                <?php
+                $sql = "SELECT COUNT(user_id) AS user_id FROM tb_user WHERE role_id = '2'";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while ($row = $result->fetch_assoc()) {
+                ?>
+                <div class="col-md-8">
+                  <h6 class="text-muted font-semibold">ข้อมูลลูกค้า</h6>
+                  <h6 class="font-extrabold mb-0"><?php echo $row["user_id"]; ?></h6>
+                </div>
+                <?php
+                  } //while condition closing bracket
+                }  //if condition closing bracket
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body px-3 py-4-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="stats-icon purple">
+                  </div>
+                </div>
+                <?php
+                $sql = "SELECT COUNT(product_id) AS product_id FROM tb_product";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while ($row = $result->fetch_assoc()) {
+                ?>
+                <div class="col-md-8">
+                  <h6 class="text-muted font-semibold">ข้อมูลสินค้า</h6>
+                  <h6 class="font-extrabold mb-0"><?php echo $row["product_id"]; ?></h6>
+                </div>
+                <?php
+                  } //while condition closing bracket
+                }  //if condition closing bracket
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body px-3 py-4-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="stats-icon green">
+                  </div>
+                </div>
+                <?php
+                $sql = "SELECT COUNT(brand_id) AS brand_id FROM tb_brand";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while ($row = $result->fetch_assoc()) {
+                ?>
+                <div class="col-md-8">
+                  <h6 class="text-muted font-semibold">ข้อมูลแบรนด์</h6>
+                  <h6 class="font-extrabold mb-0"><?php echo $row["brand_id"]; ?></h6>
+                </div>
+                <?php
+                  } //while condition closing bracket
+                }  //if condition closing bracket
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body px-3 py-4-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="stats-icon red">
+                  </div>
+                </div>
+                <?php
+                $sql = "SELECT COUNT(category_id) AS category_id FROM tb_category";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while ($row = $result->fetch_assoc()) {
+                ?>
+                <div class="col-md-8">
+                  <h6 class="text-muted font-semibold">ข้อมูลประเภท</h6>
+                  <h6 class="font-extrabold mb-0"><?php echo $row["category_id"]; ?></h6>
+                </div>
+                <?php
+                  } //while condition closing bracket
+                }  //if condition closing bracket
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>Profile Visit</h4>
+            </div>
+            <div class="card-body">
+              <div id="chart-profile-visit"></div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-12 col-xl-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Profile Visit</h4>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <svg class="bi text-primary" width="32" height="32" fill="blue" style="width:10px">
+                      <use xlink:href="./assets/back-end/mazer/dist/assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                    </svg>
+                    <h5 class="mb-0 ms-3">Europe</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h5 class="mb-0">862</h5>
+                </div>
+                <div class="col-12">
+                  <div id="chart-europe"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <svg class="bi text-success" width="32" height="32" fill="blue" style="width:10px">
+                      <use xlink:href="./assets/back-end/mazer/dist/assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                    </svg>
+                    <h5 class="mb-0 ms-3">America</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h5 class="mb-0">375</h5>
+                </div>
+                <div class="col-12">
+                  <div id="chart-america"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <svg class="bi text-danger" width="32" height="32" fill="blue" style="width:10px">
+                      <use xlink:href="./assets/back-end/mazer/dist/assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                    </svg>
+                    <h5 class="mb-0 ms-3">Indonesia</h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <h5 class="mb-0">1025</h5>
+                </div>
+                <div class="col-12">
+                  <div id="chart-indonesia"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-8">
+          <div class="card">
+            <div class="card-header">
+              <h4>Latest Comments</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover table-lg">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Comment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col-3">
+                        <div class="d-flex align-items-center">
+                          <div class="avatar avatar-md">
+                            <img src="./assets/back-end/mazer/dist/assets/images/faces/5.jpg">
+                          </div>
+                          <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                        </div>
+                      </td>
+                      <td class="col-auto">
+                        <p class=" mb-0">Congratulations on your graduation!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-3">
+                        <div class="d-flex align-items-center">
+                          <div class="avatar avatar-md">
+                            <img src="./assets/back-end/mazer/dist/assets/images/faces/2.jpg">
+                          </div>
+                          <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                        </div>
+                      </td>
+                      <td class="col-auto">
+                        <p class=" mb-0">Wow amazing design! Can you make another tutorial for
+                          this design?</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+      <!--<div class="card">
+        <div class="card-body py-4 px-5">
+          <div class="d-flex align-items-center">
+            <?php
+            $sql = "SELECT user_id, 
+            user_name, 
+            user_username 
+            FROM tb_user WHERE user_id = $_SESSION[user_id]";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              // output data of each row
+              while ($row = $result->fetch_assoc()) {
+            ?>
+            <div class="ms-3 name">
+              <h5 class="font-bold"><?php echo $row['user_name'] ?></h5>
+              <h6 class="text-muted mb-0"><?php echo $row['user_username'] ?></h6>
+            </div>
+            <?php
+              } //while condition closing bracket
+            }  //if condition closing bracket
+            ?>
+          </div>
+        </div>
+      <!--<div class="card">
+        <div class="card-header">
+          <h4>ข้อความล่าสุด</h4>
+        </div>
+        <div class="card-content pb-4">
+          <?php
+          $sql = "SELECT * FROM tb_questionnaire 
+          LEFT JOIN
+          tb_user
+          ON
+          tb_user.user_id = tb_questionnaire.user_id 
+          LIMIT 3";
+          $result = $conn->query($sql);
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+          ?>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/4.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1"><?php echo $row['user_name'] ?></h5>
+              <!-- <h6 class="text-muted mb-0"><?php //echo $row['contact_email'] ?></h6> -->
+            </div>
+          </div>
+          <?php
+            } //while condition closing bracket
+          }  //if condition closing bracket
+          ?>
+          <!-- <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/5.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">Dean Winchester</h5>
+              <h6 class="text-muted mb-0">@imdean</h6>
+            </div>
+          </div>
+          <div class="recent-message d-flex px-4 py-3">
+            <div class="avatar avatar-lg">
+              <img src="./assets/back-end/mazer/dist/assets/images/faces/1.jpg">
+            </div>
+            <div class="name ms-4">
+              <h5 class="mb-1">John Dodol</h5>
+              <h6 class="text-muted mb-0">@dodoljohn</h6>
+            </div>
+          </div> -->
+          <!--<div class="px-4">
+            <a href="./feedback.php" class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>ดูข้อมูล Feedback</a>
+          </div>
+        </div>
+      </div>-->
+      <!-- <div class="card">
+        <div class="card-header">
+          <h4>Visitors Profile</h4>
+        </div>
+        <div class="card-body">
+          <div id="chart-visitors-profile"></div>
+        </div>
+      </div> -->
     </div>
   </section>
-  <section class="u-align-center u-clearfix u-white u-section-4" id="sec-d609">
-    <div class="u-align-center u-clearfix u-sheet u-sheet-1">
-      <h2 class="u-custom-font u-text u-text-default u-text-1">
-        สอบถามข้อมูลเพิ่มเติม
-      </h2>
-      <a href="เข้าสู่ระบบ.html" data-page-id="1136523399"
-        class="u-active-black u-border-2 u-border-grey-75 u-border-hover-black u-btn u-btn-round u-button-style u-custom-font u-grey-90 u-hover-white u-radius-17 u-text-hover-black u-btn-1">คลิก</a>
-    </div>
-  </section>
+</div>
 
-<?php include("./footer.php"); ?>
+<!-- <script src="./assets/back-end/mazer/dist/assets/vendors/apexcharts/apexcharts.js"></script>
+<script src="./assets/back-end/mazer/dist/assets/js/pages/dashboard.js"></script> -->
+
+<?php include("./footer_back-end.php"); ?>
