@@ -28,7 +28,7 @@ $sql = "UPDATE tb_reservation
 $result = $conn->query($sql);
 
 if ($result == True) {
-  echo $sql;
+  echo True;
 } else {
   echo $sql;
 }

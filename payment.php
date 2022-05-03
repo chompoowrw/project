@@ -37,7 +37,7 @@
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
               ?>
-              <option value="<?php echo $row["reservation_id"]; ?>">#<?php echo $row["reservation_id"]; ?> (รวมทั้งหมด <?php echo number_format($row["deposit"], 2); ?>)</option>
+              <option value="<?php echo $row["reservation_id"]; ?>">#<?php echo $row["reservation_id"]; ?> (รวมทั้งหมด <?php echo number_format($row["deposit"], 1); ?>)</option>
               <?php
                 $i++;
                 } //while condition closing bracket

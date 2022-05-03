@@ -16,7 +16,7 @@
             <input type="text" placeholder="" id="name_answer" name="name" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-3" value="<?php echo $_SESSION['user_name']; ?>">
           </div>
           <div class="u-form-group u-form-group-6">
-            <label for="answer_answer" class="u-custom-font u-label u-label-6">สอบถาม</label>
+            <label for="answer_answer" class="u-custom-font u-label u-label-6">ตอบข้อสักถาม</label>
             <input type="text" placeholder="" id="answer_answer" name="line" class="u-border-1 u-border-grey-30 u-custom-font u-grey-5 u-input u-input-rectangle u-input-6">
           </div>
           <div class="u-align-right u-form-group u-form-submit">
